@@ -25,14 +25,14 @@ body {
     color: #fff;
 }
 
-.btn-container {
+.container-perguntas {
     padding: 15px;
     background-color: #fff;
     text-align: left;
     border-radius: 15px;
 }
 
-.btn-container button {
+.container-perguntas button {
     width: 100%;
     padding: 20px;
     margin: 5px;
@@ -45,7 +45,7 @@ body {
 
 }
 
-.btn-container h2{
+.container-perguntas h2{
     margin-bottom: 15px;
     color: black;
 }
