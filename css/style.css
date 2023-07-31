@@ -41,6 +41,7 @@ body {
     border: none;
     background-color: blue;
     color: #fff;
+    cursor: pointer;
 
 }
 
@@ -49,3 +50,6 @@ body {
     color: black;
 }
 
+.desativar {
+    display: none;
+}
