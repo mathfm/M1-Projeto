@@ -7,9 +7,54 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgba(114,12,197,1) 50%, rgba(98,0,255,1) 100%);
+    background: #6959CD;
     color: #fff;
     font-size: 1em;
+}
+
+.ajuda{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#dcdcdc;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.ajuda.abrir{
+    display:flex;
+}
+.janela-ajuda{
+    width: 40%;
+    height: 80px;
+    min-width: 450px;
+    min-height:200px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    color: #000000;
+}
+.fechar{
+    position: absolute;
+    top: 120px;
+    right: 320px;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    border: 0;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-ajuda{
+    display: flex;
+    margin: 5px;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
 .quiz {
@@ -39,15 +84,20 @@ body {
     text-align: left;
     border-radius: 10px;
     border: none;
-    background-color: blue;
+    background-color: #1E90FF;
     color: #fff;
     cursor: pointer;
-
+    transition: .3s ease;
 }
 
+.container-perguntas button:hover{
+    background-color: #87CEFA;
+    transform: scale(1.05);
+}
 .container-perguntas h2{
     margin-bottom: 15px;
     color: black;
+    font-weight: 600 ;
 }
 
 .desativar {

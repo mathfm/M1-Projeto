@@ -19,6 +19,15 @@ function alternarDiv(exibirQuestao, ocultarQuestao) {
     proximaQuestao.classList.add("desativar")
 }
 
+function abrirAjuda(){
+    const ajuda = document.getElementById ('janela-ajuda')
+    ajuda.classList.add('abrir')
+
+    ajuda.addEventListener("click", (e) => {
+        if(e.target.id == 'fechar' || e.target.id == 'janela-ajuda')
+        ajuda.classList.remove('abrir')
+    })
+}
 
 
 
