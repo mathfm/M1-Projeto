@@ -7,7 +7,12 @@
 }
 
 body {
-    background: linear-gradient();
+    background: #6959CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     color: #fff;
     font-size: 1em;
 }
@@ -25,10 +30,16 @@ body {
     color: #fff;
 }
 
-.btn-container {
+.quiz {
+    width: 100%;
+    max-width: 560px;
+    color: #000000;
+}
+
+
+.container-perguntas {
     padding: 15px;
-    background-color: #fff;
-    text-align: left;
+    background: #fff;
     border-radius: 15px;
 }
 
@@ -39,8 +50,7 @@ body {
     text-align: left;
     border-radius: 10px;
     border: none;
-    background-color: blue;
-    color: #fff;
+    background: #1E90FF;
     cursor: pointer;
 
 }
