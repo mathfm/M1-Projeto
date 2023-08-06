@@ -64,21 +64,27 @@ body {
 .quiz {
     width: 100%;
     max-width: 560px;
+    color: #000000;
 }
 
 
 .container-perguntas {
     padding: 15px;
     background: #fff;
-    text-align: left;   
     border-radius: 15px;
-    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-perguntas h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .container-perguntas button {
     width: 100%;
     padding: 20px;
-    margin-bottom: 7px;
     text-align: left;
     border-radius: 10px;
     border: none;
@@ -91,11 +97,6 @@ body {
 .container-perguntas button:hover{
     background-color: #87CEFA;
     transform: scale(1.05);
-}
-.container-perguntas h2{
-    margin-bottom: 15px;
-    color: black;
-    font-size: 1.2em;   
 }
 
 .desativar {
