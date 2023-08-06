@@ -1,6 +1,59 @@
-let btnResposta = document.querySelectorAll("#questao-1 .resposta")
-let questaoUm = document.getElementById("questao-1")
-let questaoDois = document.getElementById("questao-2")
+const btnResposta = document.querySelectorAll("#questao-0 .btn-pergunta")
+const perguntasTotal = document.querySelectorAll("#questao-0, #questao-1, #questao-2, #questao-3, #questao-4, #questao-5")
+const btnGeral = document.querySelectorAll(".btn-pergunta")
+
+
+
+function alternarDiv(exibirQuestao, ocultarQuestao) {
+    const questaoAtual = document.getElementById("questao-" + exibirQuestao)
+    const proximaQuestao = document.getElementById("questao-" + ocultarQuestao);
+
+    questaoAtual.classList.toggle("desativar");
+    proximaQuestao.classList.toggle("desativar")
+}
+
+
+function abrirAjuda(){
+    const ajuda = document.getElementById ('janela-ajuda')
+    ajuda.classList.add('abrir')
+
+    ajuda.addEventListener("click", (e) => {
+        if(e.target.id == 'fechar' || e.target.id == 'janela-ajuda')
+        ajuda.classList.remove('abrir')
+    })
+}
+
+
+
+for (let i = 0; i < perguntasTotal.length; i++) {
+    const btnTodos = document.querySelectorAll(`.btn-p${i}`)
+    for (let j = 0; j < btnTodos.length; j++) {
+
+        if (i < perguntasTotal.length - 1) {
+            btnTodos[j].addEventListener("click", () => {
+                alternarDiv(i, i + 1)
+            }) 
+        } else {
+            btnTodos[j].addEventListener("click", () => { 
+                console.log("fim");
+            })
+        }
+    }
+}
+
+
+
+/*
+for (let i = 0; i < perguntasTotal.length; i++) {
+    
+    for (let j = 0; j < btnGeral.length/perguntasTotal.length; j++) {
+        
+        
+
+    }
+    
+}
+
 
 
 for (let i = 0; i < btnResposta.length; i++) {
@@ -11,6 +64,24 @@ for (let i = 0; i < btnResposta.length; i++) {
     }
     
 )}
+
+
+for (let i = 0; i < perguntasTotal.length; i++) {
+    for (let j = 0; j < btnGeral.length; j++) {
+        auxBtn++;
+        if (j < 4) {
+            if (i == 0) {
+                btnGeral[j].addEventListener("click", () => {
+                    perguntasTotal[i].classList.toggle("desativar")
+                    perguntasTotal[i+1].classList.toggle("desativar")
+                })
+            } 
+        }
+    }
+    
+}
+*/
+
 
 
 
