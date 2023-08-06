@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgba(114,12,197,1) 50%, rgba(98,0,255,1) 100%);
+    background: linear-gradient(90deg, rgb(225, 239, 146) 50%, rgb(187, 209, 107) 100%);
     color: #fff;
     font-size: 1em;
 }
