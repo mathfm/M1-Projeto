@@ -8,9 +8,14 @@
 
 body {
     background: #6959CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     color: #fff;
-    font-size: 1em;
 }
+
 
 .ajuda{
     width: 100vw;
@@ -51,43 +56,36 @@ body {
     cursor: pointer;
 }
 .btn-ajuda{
-    display: flex;
     margin: 5px;
-    justify-content: flex-end;
     cursor: pointer;
+    align-self: flex-end;
 }
 
 .quiz {
-    width: 560px;
-    margin: 80px auto 0;
-    text-align: center;
-
+    width: 100%;
+    max-width: 560px;
 }
 
-.quiz h1 {
-    margin-bottom: 10px;
-    font-size: 3em;
-    color: #fff;
-}
 
 .container-perguntas {
     padding: 15px;
-    background-color: #fff;
-    text-align: left;
+    background: #fff;
+    text-align: left;   
     border-radius: 15px;
+    
 }
 
 .container-perguntas button {
     width: 100%;
     padding: 20px;
-    margin: 5px;
+    margin-bottom: 7px;
     text-align: left;
     border-radius: 10px;
     border: none;
-    background-color: #1E90FF;
-    color: #fff;
+    background: #1E90FF;
     cursor: pointer;
     transition: .3s ease;
+    color: #fff;
 }
 
 .container-perguntas button:hover{
@@ -97,7 +95,7 @@ body {
 .container-perguntas h2{
     margin-bottom: 15px;
     color: black;
-    font-weight: 600 ;
+    font-size: 1.2em;   
 }
 
 .desativar {
