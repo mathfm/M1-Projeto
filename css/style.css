@@ -1,33 +1,64 @@
 @import url('https://fonts.googleapis.com/css2? família= Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900 & display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #6959CD;
+    background: rgb(25, 14, 101);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     color: #fff;
-    font-size: 1em;
 }
 
-.quiz {
-    width: 560px;
-    margin: 80px auto 0;
-    text-align: center;
 
+.ajuda{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#dcdcdc;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
 }
-
-.quiz h1 {
-    margin-bottom: 10px;
-    font-size: 3em;
+.ajuda.abrir{
+    display:flex;
+}
+.janela-ajuda{
+    width: 40%;
+    height: 80px;
+    min-width: 450px;
+    min-height:200px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    color: #000000;
+}
+.fechar{
+    position: absolute;
+    top: 120px;
+    right: 320px;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    border: 0;
+    background: red;
     color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-ajuda{
+    margin: 5px;
+    cursor: pointer;
+    align-self: flex-end;
 }
 
 .quiz {
@@ -38,26 +69,35 @@ body {
 
 
 .container-perguntas {
-    padding: 15px;
+    padding: 25px;
     background: #fff;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.btn-container button {
+.container-perguntas h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.container-perguntas button {
     width: 100%;
     padding: 20px;
-    margin: 5px;
     text-align: left;
     border-radius: 10px;
     border: none;
     background: #1E90FF;
+    font-size: 17px;
     cursor: pointer;
-
+    transition: .3s ease;
+    color: #fff;
 }
 
-.btn-container h2{
-    margin-bottom: 15px;
-    color: black;
+.container-perguntas button:hover{
+    background-color: #87CEFA;
+    transform: scale(1.05);
 }
 
 .desativar {
