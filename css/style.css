@@ -42,7 +42,7 @@ body {
     border-radius: 20px;
     color: #000000;
 }
-.fechar{
+#fechar{
     position: absolute;
     top: 120px;
     right: 320px;
