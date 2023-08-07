@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
 
 * {
   margin: 0;
@@ -16,6 +16,10 @@ body {
     color: #fff;
 }
 
+.titulo {
+    text-align: center;
+    margin-bottom: 1em;
+}
 
 .ajuda{
     width: 100vw;
@@ -102,4 +106,25 @@ body {
 
 .desativar {
     display: none;
+}
+
+@media screen and (max-width: 560px) {
+    body .titulo{
+        font-size: 3.5em;
+    }
+    .quiz {
+        width: 90%;
+    }
+
+    .quiz h2 {
+        font-size: 2em;
+    }
+
+    .container-perguntas button {
+        width: 100%;
+        padding: 30px;
+        font-size: 1em;
+        text-align: center;
+ 
+    }
 }
