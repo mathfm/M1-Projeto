@@ -1,7 +1,8 @@
 const btnResposta = document.querySelectorAll("#questao-0 .btn-pergunta")
 const perguntasTotal = document.querySelectorAll("#questao-0, #questao-1, #questao-2, #questao-3, #questao-4, #questao-5")
 const btnGeral = document.querySelectorAll(".btn-pergunta")
-
+const btnCorreto = document.querySelectorAll(".btn-correto");
+let pontuacao = 0;
 
 
 function alternarDiv(exibirQuestao, ocultarQuestao) {
@@ -35,12 +36,18 @@ for (let i = 0; i < perguntasTotal.length; i++) {
             }) 
         } else {
             btnTodos[j].addEventListener("click", () => { 
-                console.log("fim");
+                console.log(pontuacao + "fim");
             })
         }
     }
 }
 
+for (let i = 0; i < btnCorreto.length; i++) {
+    btnCorreto[i].addEventListener("click", () => {
+        pontuacao++;
+        console.log(pontuacao);
+    })   
+}
 
 
 /*
