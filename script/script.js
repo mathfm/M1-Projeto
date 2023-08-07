@@ -35,11 +35,11 @@ for (let i = 0; i < perguntasTotal.length; i++) {
             }) 
         } else {
             btnTodos[j].addEventListener("click", () => { 
-                console.log("fim");
             })
         }
     }
 }
+
 
 
 

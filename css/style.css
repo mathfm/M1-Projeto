@@ -103,3 +103,24 @@ body {
 .desativar {
     display: none;
 }
+
+@media screen and (max-width: 560px) {
+    body .titulo{
+        font-size: 3.5em;
+    }
+    .quiz {
+        width: 90%;
+    }
+
+    .quiz h2 {
+        font-size: 2em;
+    }
+
+    .container-perguntas button {
+        width: 100%;
+        padding: 30px;
+        font-size: 1em;
+        text-align: center;
+ 
+    }
+}
