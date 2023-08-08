@@ -10,7 +10,7 @@ body {
     background: rgb(25, 14, 101);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: none;
     align-items: center;
     gap: 10px;
     color: #fff;
@@ -68,10 +68,8 @@ body {
 }
 
 .quiz {
-    margin-top: 3em;
     width: 100%;
     max-width: 560px;
-    min-width: 560px;
     color: #000000;
 }
 
@@ -154,8 +152,12 @@ body {
     .titulo{
         font-size: 3.5em;
     }
+
+
     .quiz {
+        margin-top: 1em;
         width: 100%;
+        max-width: 350px;
     }
 
     .questao-titulo {
@@ -168,5 +170,10 @@ body {
         font-size: 1em;
         text-align: center;
  
+    }
+
+    .btn-ajuda{
+        margin: 0;
+        display: none;
     }
 }
