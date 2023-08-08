@@ -71,6 +71,7 @@ body {
     margin-top: 3em;
     width: 100%;
     max-width: 560px;
+    min-width: 560px;
     color: #000000;
 }
 
