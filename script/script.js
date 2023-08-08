@@ -34,3 +34,6 @@ for (let i = 0; i < btnCorreto.length; i++) {
         }
     })
 }
+
+const botaoIniciar = document.getElementById("iniciarBtn")
+botaoIniciar.addEventListener("click", )
