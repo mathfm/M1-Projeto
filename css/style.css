@@ -153,11 +153,10 @@ body {
         font-size: 3.5em;
     }
 
-
     .quiz {
-        margin-top: 1em;
+        margin-top: 5em;
         width: 100%;
-        max-width: 350px;
+        max-width: 380px;
     }
 
     .questao-titulo {
@@ -170,6 +169,18 @@ body {
         font-size: 1em;
         text-align: center;
  
+    }
+
+    #tela-inicial, #tela-game-over{
+        text-align: center;
+    }
+
+    #tela-inicial h2, #tela-game-over h2{
+        font-size: 1.8em;
+    }
+
+    #tela-inicial p, #tela-game-over p{
+        font-size: 1.5em;
     }
 
     .btn-ajuda{
