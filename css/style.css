@@ -18,7 +18,7 @@ body {
 
 .titulo {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     color: #fff;
 }
 
@@ -74,31 +74,8 @@ body {
     color: #000000;
 }
 
-#tela-inicial{
-    padding: 25px;
-    background: #fff;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+#tela-inicial, #tela-game-over{
     text-align: center;
-}
-
-#iniciarBtn{
-    width: 30%;
-    height: 30px;
-    background-color: #1c81e6;
-    cursor: pointer;
-    color: white;
-    font-size: 1em;
-    border-radius: 7px;
-    transition: .3s ease;
-}
-
-.iniciarBtn:hover{
-    background-color: #065484;
-    transform: scale(1.05);
 }
 
 .container-perguntas {
@@ -129,7 +106,7 @@ body {
     color: #fff;
 }
 
-.btn-start button {
+.btn-start, .btn-transicao{
     width: 100%;
     height: 100%;
     background-color: #1c81e6;
@@ -143,19 +120,21 @@ body {
 
 .btn-pergunta:hover,
 .btn-correto:hover, 
-.btn-start button:hover{
+.btn-start:hover,
+.btn-transicao:hover{
     background-color: #065484;
     transform: scale(1.05);
 }
 
-.btn-start button:active,
+.btn-start:active,
 .btn-pergunta:active,
-.btn-pergunta:active {
+.btn-correto:active,
+.btn-transicao:active {
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
     transform: translateY(1px);
 }
 
-.btn-start {
+.btn-start, .btn-transicao {
     cursor: pointer;
     color: white;
     font-weight: 500;
@@ -163,14 +142,9 @@ body {
     width: 50%;
     border-radius: 0.5em;
 }
-
-
-
 #tela-final {
     text-align: center;
 }
-
-
 .desativar {
     display: none;
 }
