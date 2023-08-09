@@ -23,6 +23,7 @@ body {
     color: #fff;
 }
 
+
 .ajuda{    
     background: rgb(25, 14, 101);
     width: 100vw;
@@ -40,31 +41,37 @@ body {
 }
 .janela-ajuda-conteudo{
     width: 40%;
-    height: 80px;
     min-width: 450px;
-    min-height:200px;
+    min-height: 200px;
     background-color: #fff;
-    padding: 50px;
+    padding: 20px;
     border-radius: 20px;
     color: #000000;
+    position: relative;
 }
 #fechar{
     position: absolute;
-    top: 120px;
-    right: 320px;
+    top: -15px;
+    right: -15px;
     width: 30px;
     height: 30px;
-    border-radius:50%;
+    border-radius: 50%;
     border: 0;
     background: red;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-ajuda{
     margin: 5px;
     cursor: pointer;
     align-self: flex-end;
+    background: none;
+    border: none;
+    color: #fff;
     
 }
 
