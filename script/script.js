@@ -7,9 +7,9 @@ let contador = 0;
 botaoTransitar[0].addEventListener("click", () => {
     alternarDiv("0", "tela-inicial")
     const duvida = document.querySelector('.btn-ajuda')
-    const quizz = document.querySelector('.quiz')
+    const quiz = document.querySelector('.quiz')
     duvida.style.display = "none"
-    quizz.style.marginTop = "3em"
+    quiz.style.marginTop = "3em"
 })
 
 for (let i = 1; i < botaoTransitar.length; i++) {

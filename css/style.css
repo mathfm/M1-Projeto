@@ -19,16 +19,17 @@ body {
 .titulo {
     text-align: center;
     margin-bottom: 0.5em;
+    margin-top: 2em;
     color: #fff;
 }
 
-.ajuda{
+.ajuda{    
+    background: rgb(25, 14, 101);
     width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(25, 14, 101);
     display: none;
     align-items: center;
     justify-content: center;
@@ -37,7 +38,7 @@ body {
 .ajuda.abrir{
     display:flex;
 }
-.janela-ajuda{
+.janela-ajuda-conteudo{
     width: 40%;
     height: 80px;
     min-width: 450px;
@@ -150,7 +151,8 @@ body {
 
 @media screen and (max-width: 560px) {
     .titulo{
-        font-size: 3.5em;
+        font-size: 2.5em;
+        margin-top: 0.5em;
     }
 
     .quiz {
@@ -161,7 +163,7 @@ body {
     }
 
     .questao-titulo {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .btn-pergunta, .btn-correto {
@@ -177,15 +179,14 @@ body {
     }
 
     #tela-inicial h2, #tela-game-over h2{
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     #tela-inicial p, #tela-game-over p{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .btn-ajuda{
-        margin: 0;
         display: none;
     }
 }
