@@ -10,17 +10,22 @@
     <link rel="shortcut icon" href="img/brain.png" type="image/x-icon">
 </head>
 <body>
-    <div id="ajuda_" onclick="abrirAjuda()" class="btn-ajuda"><i class="fa-solid fa-question-circle"></i></div>
-    <div class="ajuda" id="janela-ajuda">
-        <div class="janela-ajuda-conteudo">
-            <button id="fechar">X</button>
-            <h1>Precisando de ajuda?</h1>
-            <p>Bem-vindo a janela ajuda<br>
-                O quiz é bem fácil de jogar, nosso jogo é composto por seis perguntas com apenas uma resposta correta, basta ler as perguntas e clique nos botões correspondente a resposta.
-                <br>Fácil não é mesmo? Espero que se divirta!
-            </p>
+    <header>
+        <button id="ajuda_" onclick="abrirAjuda()" class="btn-ajuda" role="button">
+        <span class="icon"><i class="fa-solid fa-question-circle"></i></span>
+        </button>
+        <div class="ajuda" id="janela-ajuda">
+            <section class="janela-ajuda-conteudo">
+                <button id="fechar">X</button>
+                <h1>Precisando de ajuda?</h1>
+                <p>Bem-vindo à janela de ajuda.<br>
+                    O quiz é bem fácil de jogar. Nosso jogo é composto por seis perguntas, cada uma com apenas uma resposta
+                    correta. Basta ler as perguntas e clicar nos botões correspondentes às respostas.
+                    <br>Fácil, não é mesmo? Espero que você se divirta!
+                </p>
+            </section>
         </div>
-    </div>
+    </header>
 
     <main>
         <div class="quiz">
@@ -37,7 +42,6 @@
                 <button class="btn-pergunta btn-p0">Estados Unidos</button>
                 <button class="btn-pergunta btn-p0">Austrália</button>
             </section>
-        
             <section id="questao-1" class="container-perguntas desativar">
                 <h2 class="questao-titulo">De quem é a famosa frase “Penso, logo existo”?</h2>
                 <button class="btn-pergunta btn-p1"> Platão</button>
@@ -85,7 +89,6 @@
             </section>
         </div>
     </main>
-
 
     <script src="script/script.js"></script>
 </body>
