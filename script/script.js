@@ -3,13 +3,17 @@ const btnGeral = document.querySelectorAll(".btn-pergunta")
 const btnCorreto = document.querySelectorAll(".btn-correto");
 const botaoTransitar = document.querySelectorAll(".btn-transicao")
 let contador = 0;
-
+let nomeUsuario;
 botaoTransitar[0].addEventListener("click", () => {
     alternarDiv("0", "tela-inicial")
     const duvida = document.querySelector('.btn-ajuda')
     const quiz = document.querySelector('.quiz')
     duvida.style.display = "none"
     quiz.style.marginTop = "3em"
+    nomeUsuario = prompt("Digite seu nome: ")
+    while (nomeUsuario == "") {
+        nomeUsuario = prompt("Digite seu nome: ")
+    }
 })
 
 for (let i = 1; i < botaoTransitar.length; i++) {
@@ -49,7 +53,7 @@ function abrirAjuda(){
 
     ajuda.addEventListener("click", (e) => {
         if(e.target.id == 'fechar' || e.target.id == 'janela-ajuda')
-        ajuda.classList.remove('abrir')
+            ajuda.classList.remove('abrir')
     })
 }
 
@@ -68,6 +72,7 @@ for (let i = 0; i < btnCorreto.length; i++) {
             alternarDiv(i, i+1)
         } else if (i == btnCorreto.length - 1) {
             alternarDiv("tela-final", i)
+            alert("Parabéns " + nomeUsuario + " você ganhou!")
         }
     })
 }
